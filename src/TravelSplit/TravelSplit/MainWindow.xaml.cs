@@ -8,6 +8,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using TravelSplit.View;
 
 namespace TravelSplit
 {
@@ -18,7 +19,10 @@ namespace TravelSplit
     {
         public MainWindow()
         {
-            InitializeComponent();
+            var tripList = new TripListView();
+
+            tripList.Show();
+            this.Close();
         }
     }
 }
